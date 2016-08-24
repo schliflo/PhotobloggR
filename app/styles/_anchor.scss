@@ -1,0 +1,42 @@
+a {
+  text-decoration: none;
+  color: $color-text;
+  position: relative;
+  padding-right: 1rem;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-text;
+    opacity: .5;
+    transform-origin: right;
+    transform: translateX(0) scaleX(.25);
+    transition: transform $transition-default;
+  }
+
+  &:after {
+    $size: .7rem;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: $size;
+    width: $size;
+    opacity: .5;
+    border-top: .1rem solid $color-text;
+    border-right: .1rem solid $color-text;
+    transform: translate(0, -45%) rotate(45deg);
+  }
+
+  &:hover {
+    &:before {
+      transform: scaleX(.95);
+    }
+  }
+}

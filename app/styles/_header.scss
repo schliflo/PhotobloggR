@@ -1,0 +1,32 @@
+.header-main {
+  padding: 2rem 2.5rem;
+  font-size: 2.2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: $z-index-header-bar;
+
+  &:before {
+    pointer-events: none;
+    display: block;
+    content: '';
+    position: absolute;
+    width: 101%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    background-color: $color-bg;
+    transition: opacity $transition-default;
+  }
+
+  .#{$class-menu-open} &,
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+}

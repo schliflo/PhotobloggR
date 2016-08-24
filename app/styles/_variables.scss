@@ -1,0 +1,31 @@
+// COLORS
+$color-bg: #fafafa;
+$color-text: #333;
+$color-notice: #e8ca86;
+$color-primary: #F1F2B5;
+$color-secondary: #218997;
+
+$gradient-primary: linear-gradient(135deg, $color-primary, $color-secondary);
+
+// FONTS
+$font-family-base: 'Courier New', Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+$font-size-base: 1.6rem;
+
+// Z-INDEX
+$z-index-header-bar: 100;
+$z-index-navigation: 110;
+
+// TRANSITIONS
+$transition-duration-default: .32s;
+$transition-duration-long: $transition-duration-default*10;
+$transition-default-easing: ease-in-out;
+$transition-default: $transition-duration-default $transition-default-easing;
+
+// SIZES
+$height-header: 6.5rem;
+
+// CLASSES
+$class-menu-open: menu-open;
+
+// SETTINGS
+$max-menu-items: 4;

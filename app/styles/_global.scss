@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  background: $color-bg;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $color-text;
+
+  &.#{$class-menu-open} {
+    overflow: hidden;
+  }
+}
+
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+::selection {
+  background: transparent;
+  color: $color-primary;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
